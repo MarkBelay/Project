@@ -1,0 +1,16 @@
+<br>
+    <br>
+    <br>
+    <input [(ngModel)]="emp.name" type="text" placeholder="Add by Name">
+    <button (click)="addUser()">Add Employee</button>
+    <br>
+    <br>
+    <br>
+    <input [(ngModel)]="id" type="number" placeholder="Delete by Id">
+    <button (click)="deleteUser()">Delete Employee</button>
+    <br>
+    <br>
+    <input [(ngModel)]="Emp.name" type="Text" placeholder="Update by Id">
+    <input [(ngModel)]="Emp.id" type="number" placeholder="">
+    <button (click)="updateUser()">Update Employee</button>
+<app-display *ngFor="let emp of employees" [usr]="emp"></app-display>
